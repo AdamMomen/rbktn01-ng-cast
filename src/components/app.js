@@ -9,6 +9,12 @@ angular.module('video-player')
       this.currentVideo =  this.videos[index];
     };
     this.query = '';
+   
+    
+    this.handleSearch = function () {
+     !this.query ? '' :
+      console.log(this.query)
+    }
     this.searchVideo = (query)=> {
       
     }

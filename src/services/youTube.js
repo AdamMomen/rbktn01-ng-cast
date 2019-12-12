@@ -1,8 +1,11 @@
 angular.module('video-player')
 .service('youTube', function(){
   $http({
-    method: 'list',
-    url: 'https://www.googleapis.com/youtube/v3/search'
+    method: 'GET',
+    url: 'https://www.googleapis.com/youtube/v3/search',
+    key: window.YOUTUBE_API_KEY,
+    maxResponse: 5,
+    
   }).then(function successCallback(response) {
       console.log('successsssss')
     }, function errorCallback(response) {

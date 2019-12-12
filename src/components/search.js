@@ -4,5 +4,6 @@ angular.module('video-player')
   templateUrl: "src/templates/search.html",
     bindings:{
       query : '@',
+      search : '<',
     }
 });
